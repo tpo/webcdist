@@ -1,4 +1,13 @@
 Webcdist::Application.routes.draw do
+  resources :configurations
+
+
+  resources :tags
+
+
+  resources :hosts
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
