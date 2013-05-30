@@ -18,3 +18,28 @@ Ideas:
 
     - trigger configuration of host / hostgroup
 
+
+Configurations:
+
+    - name
+    - description (from user)
+    - (cdist-)Objects
+
+(cdist-)Object:
+    - (cdist-)Type
+    - parameter_values
+        - parameter_name
+        - value
+
+(cdist-)Type:
+    - name
+    - description 
+    - readme (multi line!)
+    - parameters
+        - name
+        - type
+            - boolean (set / unset no value)
+            - optional (with value)
+            - required (with value)
+            - optional multiple times (with value)
+            - required multiple times (with value)
