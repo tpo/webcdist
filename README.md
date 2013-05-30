@@ -21,12 +21,13 @@ Ideas:
 
 Configurations:
 
-    - name
+    - name (from user)
     - description (from user)
     - (cdist-)Objects
 
 (cdist-)Object:
     - (cdist-)Type
+    - object_id
     - parameter_values
         - parameter_name
         - value
@@ -35,6 +36,7 @@ Configurations:
     - name
     - description 
     - readme (multi line!)
+    - is_singleton
     - parameters
         - name
         - type
