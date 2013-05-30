@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @cdist_type.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @cdist_type.description %>
+</p>
+
+<p>
+  <b>Readme:</b>
+  <%= @cdist_type.readme %>
+</p>
+
+
+<%= link_to 'Edit', edit_cdist_type_path(@cdist_type) %> |
+<%= link_to 'Back', cdist_types_path %>

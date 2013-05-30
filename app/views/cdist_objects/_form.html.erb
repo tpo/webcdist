@@ -1,0 +1,21 @@
+<%= form_for(@cdist_object) do |f| %>
+  <% if @cdist_object.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cdist_object.errors.count, "error") %> prohibited this cdist_object from being saved:</h2>
+
+      <ul>
+      <% @cdist_object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cdist_type %><br />
+    <%= f.number_field :cdist_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

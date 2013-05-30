@@ -1,4 +1,13 @@
 Webcdist::Application.routes.draw do
+  resources :parameters
+
+
+  resources :cdist_types
+
+
+  resources :cdist_objects
+
+
   resources :configurations
 
 

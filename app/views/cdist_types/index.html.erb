@@ -1,0 +1,27 @@
+<h1>Listing cdist_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Readme</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cdist_types.each do |cdist_type| %>
+  <tr>
+    <td><%= cdist_type.name %></td>
+    <td><%= cdist_type.description %></td>
+    <td><%= cdist_type.readme %></td>
+    <td><%= link_to 'Show', cdist_type %></td>
+    <td><%= link_to 'Edit', edit_cdist_type_path(cdist_type) %></td>
+    <td><%= link_to 'Destroy', cdist_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cdist type', new_cdist_type_path %>
