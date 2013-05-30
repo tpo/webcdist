@@ -19,8 +19,7 @@ Ideas:
     - trigger configuration of host / hostgroup
 
 
-Configurations:
-
+CdistConfiguration:
     - name (from user)
     - description (from user)
     - (cdist-)Objects
