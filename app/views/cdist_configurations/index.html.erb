@@ -1,0 +1,24 @@
+<h1>Listing cdist configurations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cdist_configurations.each do |cdist_configuration| %>
+  <tr>
+    <td><%= cdist_configuration.name %></td>
+    <td><%= cdist_configuration.description %></td>
+    <td><%= link_to 'Show', cdist_configuration %></td>
+    <td><%= link_to 'Edit', edit_cdist_configuration_path(cdist_configuration) %></td>
+    <td><%= link_to 'Destroy', cdist_configuration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cdist configuration', new_cdist_configuration_path %>

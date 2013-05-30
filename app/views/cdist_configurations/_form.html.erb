@@ -1,10 +1,10 @@
-<%= form_for(@configuration) do |f| %>
-  <% if @configuration.errors.any? %>
+<%= form_for(@cdist_configuration) do |f| %>
+  <% if @cdist_configuration.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@configuration.errors.count, "error") %> prohibited this configuration from being saved:</h2>
+      <h2><%= pluralize(@cdist_configuration.errors.count, "error") %> prohibited this cdist configuration from being saved:</h2>
 
       <ul>
-      <% @configuration.errors.full_messages.each do |msg| %>
+      <% @cdist_configuration.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

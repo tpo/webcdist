@@ -8,7 +8,7 @@ Webcdist::Application.routes.draw do
   resources :cdist_objects
 
 
-  resources :configurations
+  resources :cdist_configurations
 
 
   resources :tags

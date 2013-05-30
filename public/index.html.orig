@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WebCDist</title>
+    <title>Ruby on Rails: Welcome aboard</title>
     <style type="text/css" media="screen">
       body {
         margin: 0;
@@ -210,19 +210,6 @@
         <div id="about">
           <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
           <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="local resources">
-          <h1>Local resources</h1>
-
-          <ul>
-            <li><p><a href="parameters">parameters</a></p></li>
-            <li><p><a href="cdist_types">cdist_types</a></p></li>
-            <li><p><a href="cdist_objects">cdist_objects</a></p></li>
-            <li><p><a href="configurations">configurations</a></p></li>
-            <li><p><a href="tags">tags</a></p></li>
-            <li><p><a href="hosts">hosts</a></p></li>
-          </ul>
         </div>
 
         <div id="getting-started">

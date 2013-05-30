@@ -11,9 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130530132352) do
+ActiveRecord::Schema.define(:version => 20130530145159) do
 
-  create_table "configurations", :force => true do |t|
+  create_table "cdist_objects", :force => true do |t|
+    t.integer  "cdist_type_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "cdist_types", :force => true do |t|
+    t.text     "name"
+    t.text     "description"
+    t.text     "readme"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "cdist_configurations", :force => true do |t|
     t.text     "name"
     t.text     "description"
     t.datetime "created_at",  :null => false
@@ -23,6 +37,13 @@ ActiveRecord::Schema.define(:version => 20130530132352) do
   create_table "hosts", :force => true do |t|
     t.text     "name"
     t.integer  "ssh_port"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "parameters", :force => true do |t|
+    t.text     "name"
+    t.text     "type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
