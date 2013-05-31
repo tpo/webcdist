@@ -1,3 +1,3 @@
-class Configuration < ActiveRecord::Base
+class CdistConfiguration < ActiveRecord::Base
   attr_accessible :description, :name
 end

@@ -1,2 +1,2 @@
-module ConfigurationsHelper
+module CdistConfigurationsHelper
 end
