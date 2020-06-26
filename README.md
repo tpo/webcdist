@@ -1,3 +1,5 @@
+ATTENTION - this repository is not longer maintained and has [security issues](https://github.com/tpo/webcdist/security). 
+
 webcdist
 ========
 
